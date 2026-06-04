@@ -32,3 +32,6 @@ dist-ssr
 
 # Large assets
 Fotos_Garrafas_250808/
+
+# Vercel Cache
+.vercel/

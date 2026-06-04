@@ -1,4 +1,0 @@
-const tsrStartManifest = () => ({ routes: { __root__: { filePath: "/home/nicholas/destilaria-cantelli/src/routes/__root.tsx", children: ["/", "/historia", "/rotulos", "/sitemap.xml"], preloads: ["/assets/index-C5V0QfYb.js"], scripts: [{ attrs: { type: "module", async: true, src: "/assets/index-C5V0QfYb.js" } }] }, "/": { filePath: "/home/nicholas/destilaria-cantelli/src/routes/index.tsx", children: void 0, preloads: ["/assets/index-DvpawJsO.js", "/assets/Reveal-Crz55GvZ.js"] }, "/historia": { filePath: "/home/nicholas/destilaria-cantelli/src/routes/historia.tsx", children: void 0, preloads: ["/assets/historia-b3olDLw6.js", "/assets/Reveal-Crz55GvZ.js"] }, "/rotulos": { filePath: "/home/nicholas/destilaria-cantelli/src/routes/rotulos.tsx", children: void 0, preloads: ["/assets/rotulos-CO25shOJ.js", "/assets/Reveal-Crz55GvZ.js"] } } });
-export {
-  tsrStartManifest
-};

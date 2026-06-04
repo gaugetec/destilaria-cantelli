@@ -64,6 +64,16 @@ export function SiteHeader() {
             <span className="hidden sm:inline">História da Família</span>
             <span className="sm:hidden">História</span>
           </Link>
+          <Link
+            to="/rotulos"
+            className={`${linkBase} ${
+              location.pathname === "/rotulos"
+                ? "text-gold"
+                : isDark ? "text-cream/80 hover:text-gold-soft" : "text-charcoal hover:text-gold"
+            }`}
+          >
+            Rótulos
+          </Link>
         </nav>
       </div>
     </header>

@@ -10,12 +10,18 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RotulosRouteImport } from './routes/rotulos'
 import { Route as HistoriaRouteImport } from './routes/historia'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RotulosRoute = RotulosRouteImport.update({
+  id: '/rotulos',
+  path: '/rotulos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HistoriaRoute = HistoriaRouteImport.update({
@@ -32,30 +38,34 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/historia': typeof HistoriaRoute
+  '/rotulos': typeof RotulosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/historia': typeof HistoriaRoute
+  '/rotulos': typeof RotulosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/historia': typeof HistoriaRoute
+  '/rotulos': typeof RotulosRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/historia' | '/sitemap.xml'
+  fullPaths: '/' | '/historia' | '/rotulos' | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/historia' | '/sitemap.xml'
-  id: '__root__' | '/' | '/historia' | '/sitemap.xml'
+  to: '/' | '/historia' | '/rotulos' | '/sitemap.xml'
+  id: '__root__' | '/' | '/historia' | '/rotulos' | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   HistoriaRoute: typeof HistoriaRoute
+  RotulosRoute: typeof RotulosRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
@@ -66,6 +76,13 @@ declare module '@tanstack/react-router' {
       path: '/sitemap.xml'
       fullPath: '/sitemap.xml'
       preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rotulos': {
+      id: '/rotulos'
+      path: '/rotulos'
+      fullPath: '/rotulos'
+      preLoaderRoute: typeof RotulosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/historia': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   HistoriaRoute: HistoriaRoute,
+  RotulosRoute: RotulosRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport

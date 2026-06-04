@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Destilaria Cantelli — Tradição preservada desde 1898" },
+      { title: "Destilaria Cantelli — Tradição preservada desde 1881" },
       {
         name: "description",
         content:
@@ -87,11 +87,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Grappa Cantelli" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Destilaria Cantelli — Tradição preservada desde 1898" },
-      { name: "twitter:title", content: "Destilaria Cantelli — Tradição preservada desde 1898" },
-      { name: "description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1898." },
-      { property: "og:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1898." },
-      { name: "twitter:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1898." },
+      { property: "og:title", content: "Destilaria Cantelli — Tradição preservada desde 1881" },
+      { name: "twitter:title", content: "Destilaria Cantelli — Tradição preservada desde 1881" },
+      { name: "description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
+      { property: "og:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
+      { name: "twitter:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e939fb2d-121c-4399-bab4-f4a6d81825e6/id-preview-1033f293--dd675ddc-4553-4170-bcac-314b51f3eca3.lovable.app-1780260008477.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e939fb2d-121c-4399-bab4-f4a6d81825e6/id-preview-1033f293--dd675ddc-4553-4170-bcac-314b51f3eca3.lovable.app-1780260008477.png" },
     ],

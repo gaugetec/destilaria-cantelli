@@ -1,8 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-historia.jpg";
-import gioachinoImg from "@/assets/gioachino.jpg";
-import caminhosImg from "@/assets/caminhos-pedra.jpg";
-import finalImg from "@/assets/final-cta.jpg";
+const heroImg = "/destilaria/20190921_142749.jpg";
+const gioachinoImg = "/destilaria/20190921_142657.jpg";
+const caminhosImg = "/destilaria/20190920_094946.jpg";
+const finalImg = "/destilaria/20190516_100338.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
@@ -14,12 +14,12 @@ export const Route = createFileRoute("/historia")({
       {
         name: "description",
         content:
-          "Uma jornada iniciada em 1898 por Gioachino Cantelli, imigrante italiano que levou aos Caminhos de Pedra a arte de produzir grappa preservada por gerações.",
+          "Uma jornada iniciada em 1881 por Gioachino Cantelli, imigrante italiano que trouxe de Breganze a arte de produzir grappa preservada por gerações.",
       },
       { property: "og:title", content: "Nossa História — Grappa Cantelli" },
       {
         property: "og:description",
-        content: "Uma jornada iniciada em 1898 nos Caminhos de Pedra, Serra Gaúcha.",
+        content: "Uma jornada iniciada em 1881 nos Caminhos de Pedra, Serra Gaúcha.",
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/historia" },
@@ -32,25 +32,24 @@ export const Route = createFileRoute("/historia")({
 
 const timeline = [
   {
-    year: "1898",
-    title: "O começo",
-    text: "Gioachino Cantelli inicia a tradição familiar da produção de grappa.",
+    year: "1881",
+    title: "A partida da Itália",
+    text: "Gioachino Cantelli deixa Breganze e chega ao Brasil, trazendo consigo a tradição da produção de grappa.",
+  },
+  {
+    year: "1889",
+    title: "O legado prematuro",
+    text: "Com o falecimento de Gioachino, seu filho Matteo assume aos 13 anos a responsabilidade de honrar e manter os costumes familiares.",
   },
   {
     year: "Início do Século XX",
-    title: "Costume familiar",
-    text: "A produção artesanal passa a integrar a cultura e os costumes da família.",
-  },
-  {
-    year: "Gerações Seguintes",
-    title: "Transmissão",
-    text: "A receita é preservada e transmitida entre pais, filhos e netos.",
+    title: "A comunidade em São Pedro",
+    text: "Matteo se casa com Maria Osmarin e consolida a comunidade dos Cantelli em Bento Gonçalves, preservando a produção artesanal.",
   },
   {
     year: "Atualidade",
     title: "Herança viva",
-    text:
-      "A tradição continua viva, mantendo a essência e autenticidade que acompanham a família há mais de um século.",
+    text: "O legado e a receita continuam vivos através de Arduino e das novas gerações, mantendo a essência original iniciada há mais de um século.",
   },
 ];
 
@@ -82,7 +81,7 @@ function HistoriaPage() {
             <div className="mt-8 flex items-center gap-4">
               <span className="h-px w-12 bg-gold" />
               <span className="font-serif italic text-xl md:text-2xl text-cream/90">
-                Uma jornada iniciada em 1898
+                Uma jornada iniciada em 1881
               </span>
               <span className="h-px w-12 bg-gold" />
             </div>
@@ -117,8 +116,8 @@ function HistoriaPage() {
             </h2>
             <span className="gold-rule mt-8" />
             <p className="mt-8 font-serif text-xl text-charcoal/80 leading-[1.8]">
-              No final do século XIX, <em className="text-wood-dark">Gioachino Cantelli</em>{" "}
-              trouxe da Itália conhecimentos, costumes e tradições que seriam preservados
+              No final do século XIX, por volta de 1881, <em className="text-wood-dark">Gioachino Cantelli</em>{" "}
+              deixou a cidade de Breganze, na Itália, trazendo ao Brasil conhecimentos, costumes e tradições que seriam preservados
               por sua família ao longo das gerações.
             </p>
             <p className="mt-6 font-serif text-xl text-charcoal/70 leading-[1.8]">
@@ -261,7 +260,7 @@ function HistoriaPage() {
         <div className="absolute inset-0 vignette" />
         <div className="relative z-10 px-6 max-w-3xl text-cream">
           <Reveal>
-            <span className="eyebrow !text-gold-soft">Cantelli · MCMXCVIII</span>
+            <span className="eyebrow !text-gold-soft">Cantelli · MDCCCLXXXI</span>
             <h2 className="mt-8 font-serif italic text-3xl md:text-5xl lg:text-6xl leading-[1.25]">
               Mais de um século de tradição.
               <br />

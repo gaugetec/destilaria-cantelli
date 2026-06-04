@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-home.jpg";
-import legacyImg from "@/assets/family-legacy.jpg";
-import parallaxImg from "@/assets/parallax-vineyards.jpg";
+const heroImg = "/destilaria/20190920_094411.jpg";
+const legacyImg = "/destilaria/20190516_100338.jpg";
+const parallaxImg = "/destilaria/20190914_110602.jpg";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
@@ -9,13 +9,13 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grappa Cantelli — Uma tradição preservada desde 1898" },
+      { title: "Grappa Cantelli — Uma tradição preservada desde 1881" },
       {
         name: "description",
         content:
-          "Mais de um século de história, autenticidade e tradição. A Grappa Cantelli preserva o legado familiar iniciado por Gioachino Cantelli nos Caminhos de Pedra, Serra Gaúcha.",
+          "Mais de um século de história, autenticidade e tradição. A Grappa Cantelli preserva o legado familiar trazido por Gioachino Cantelli de Breganze, Itália, para os Caminhos de Pedra, Serra Gaúcha.",
       },
-      { property: "og:title", content: "Grappa Cantelli — Uma tradição preservada desde 1898" },
+      { property: "og:title", content: "Grappa Cantelli — Uma tradição preservada desde 1881" },
       {
         property: "og:description",
         content:
@@ -49,7 +49,7 @@ function HomePage() {
 
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-cream">
           <Reveal delay={200}>
-            <div className="eyebrow !text-gold-soft">Dal 1898 · Caminhos de Pedra</div>
+            <div className="eyebrow !text-gold-soft">Dal 1881 · Caminhos de Pedra</div>
           </Reveal>
           <Reveal delay={400}>
             <h1 className="mt-6 font-display text-5xl sm:text-7xl md:text-8xl tracking-[0.15em] font-medium">
@@ -61,7 +61,7 @@ function HomePage() {
             <div className="mt-8 flex items-center gap-4">
               <span className="h-px w-12 bg-gold" />
               <span className="font-serif italic text-xl md:text-2xl text-cream/90">
-                Uma tradição preservada desde 1898
+                Uma tradição preservada desde 1881
               </span>
               <span className="h-px w-12 bg-gold" />
             </div>
@@ -113,7 +113,7 @@ function HomePage() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block font-display text-[7rem] leading-none text-gold/15 select-none">
-              1898
+              1881
             </div>
           </Reveal>
 
@@ -126,12 +126,10 @@ function HomePage() {
             <p className="mt-8 font-serif text-xl text-charcoal/80 leading-[1.8]">
               A Grappa Cantelli representa muito mais do que uma bebida. Ela carrega a
               memória, os costumes e o trabalho de gerações que preservaram uma tradição
-              iniciada por <em className="text-wood-dark">Gioachino Cantelli</em> no final do
-              século XIX.
+              trazida por <em className="text-wood-dark">Gioachino Cantelli</em>, que deixou a cidade de Breganze na Itália rumo ao Brasil em 1881.
             </p>
             <p className="mt-6 font-serif text-xl text-charcoal/70 leading-[1.8]">
-              Cada garrafa é resultado de uma história construída com dedicação, respeito
-              às origens e paixão pela cultura italiana.
+              Cada garrafa é resultado de uma história de coragem e determinação, iniciada quando o jovem filho de Matteo assumiu o legado da família, respeitando as origens e a paixão pela cultura italiana.
             </p>
           </Reveal>
         </div>
@@ -202,10 +200,10 @@ function HomePage() {
         <div className="relative z-10 px-6 max-w-4xl">
           <Reveal>
             <span className="font-display text-gold text-xs tracking-[0.5em] uppercase">
-              MCMXCVIII
+              MDCCCLXXXI
             </span>
             <blockquote className="mt-8 font-serif italic text-3xl md:text-5xl lg:text-6xl text-cream leading-[1.3]">
-              "Desde 1898 preservando uma
+              "Desde 1881 preservando uma
               <br />
               herança familiar única."
             </blockquote>

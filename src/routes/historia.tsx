@@ -96,7 +96,7 @@ function HistoriaPage() {
             <div className="relative aspect-[3/4] overflow-hidden bg-wood-dark">
               <img
                 src={gioachinoImg}
-                alt="Retrato em óleo de Gioachino Cantelli"
+                alt="Alambique da Destilaria Cantelli"
                 className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
                 width={1280}
@@ -105,7 +105,7 @@ function HistoriaPage() {
               <div className="absolute inset-3 border border-gold/40" />
             </div>
             <p className="mt-4 font-serif italic text-sm text-charcoal/60 text-center">
-              Gioachino Cantelli · fundador
+              Alambique da Destilaria Cantelli
             </p>
           </Reveal>
 

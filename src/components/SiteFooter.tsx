@@ -30,6 +30,11 @@ export function SiteFooter() {
                   História da Família
                 </Link>
               </li>
+              <li>
+                <Link to="/rotulos" className="text-cream/80 hover:text-gold transition-colors">
+                  Rótulos
+                </Link>
+              </li>
             </ul>
           </div>
 

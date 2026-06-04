@@ -73,13 +73,22 @@ function HomePage() {
             </p>
           </Reveal>
           <Reveal delay={1300}>
-            <Link
-              to="/historia"
-              className="group mt-12 inline-flex items-center gap-4 border border-gold/60 px-10 py-4 font-display text-[0.72rem] tracking-[0.4em] uppercase text-cream hover:bg-gold hover:text-charcoal transition-all duration-500"
-            >
-              Conheça Nossa História
-              <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
-            </Link>
+            <div className="mt-12 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              <Link
+                to="/historia"
+                className="group inline-flex w-full sm:w-auto justify-center items-center gap-4 border border-gold/60 px-8 py-4 font-display text-[0.72rem] tracking-[0.4em] uppercase text-cream hover:bg-gold hover:text-charcoal transition-all duration-500"
+              >
+                Conheça Nossa História
+                <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                to="/rotulos"
+                className="group inline-flex w-full sm:w-auto justify-center items-center gap-4 border border-gold/60 bg-gold/5 px-8 py-4 font-display text-[0.72rem] tracking-[0.4em] uppercase text-cream hover:bg-gold hover:text-charcoal transition-all duration-500"
+              >
+                Conheça Nossos Rótulos
+                <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+            </div>
           </Reveal>
         </div>
 

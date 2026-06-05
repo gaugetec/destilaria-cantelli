@@ -152,10 +152,7 @@ function HistoriaPage() {
                 }`}
               >
                 <div className={`pl-12 md:pl-0 ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                  <div className="font-display text-gold text-xs tracking-[0.4em] uppercase">
-                    Anno
-                  </div>
-                  <div className="mt-2 font-display text-3xl md:text-4xl text-cream tracking-[0.1em]">
+                  <div className="font-display text-3xl md:text-4xl text-cream tracking-[0.1em]">
                     {item.year}
                   </div>
                 </div>

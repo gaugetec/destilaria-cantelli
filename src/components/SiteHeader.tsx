@@ -38,7 +38,7 @@ export function SiteHeader() {
               isDark ? "text-gold-soft" : "text-gold"
             }`}
           >
-            CANTELLI · 1898
+            CANTELLI · 1881
           </span>
         </Link>
 

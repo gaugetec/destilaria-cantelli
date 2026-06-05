@@ -23,50 +23,25 @@ const categories = [
     description:
       "Produzidas com rigor e tradição na Serra Gaúcha, nossas grappas carregam a essência da família Cantelli.",
     products: [
-      { name: "Grappa Tradicional", image: "/produtos/DSCF1844_Tradicional_Todas.jpg" },
-      { name: "Grappa Tradicional", image: "/produtos/DSCF1851_Tradicional_Todas.jpg" },
-      { name: "Grappa Tradicional", image: "/produtos/DSCF1861_Tradicional_Todas.jpg" },
-      { name: "Grappa Tradicional", image: "/produtos/DSCF1864_Tradicional_Todas.jpg" },
-      { name: "Grappa Tradicional", image: "/produtos/DSCF1865_Tradicional_Todas.jpg" },
-      { name: "Grappa Tradicional (750ml)", image: "/produtos/DSCF1870_Tradicional_750.jpg" },
-      { name: "Grappa Tradicional (750ml)", image: "/produtos/DSCF1871_Tradicional_750.jpg" },
-      { name: "Grappas Sortidas", image: "/produtos/DSCF1953_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1955_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1957_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1959_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1960_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1961_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1964_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1966_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1968_Grappas.jpg" },
-      { name: "Grappas", image: "/produtos/DSCF1970_Grappas.jpg" },
+      { name: "Grappa de Cabernet Sauvignon", desc: "Destilada de bagaço de Cabernet Sauvignon (50, 275, 500, 750 ml)", image: "/produtos/DSCF1844_Tradicional_Todas.jpg" },
+      { name: "Grappa de Cabernet com Infusão", desc: "Com infusão de uva tinta (50, 275, 500, 750 ml)", image: "/produtos/DSCF1875_Uva_Todas.jpg" },
+      { name: "Grappa de Moscato", desc: "Destilada de bagaço de uva Moscato (275, 500 e 750 ml)", image: "/produtos/DSCF1857_Moscato_Todas.jpg" },
+      { name: "Grappa de Moscato com Infusão", desc: "Com infusão de uva (50, 275, 500 e 750 ml)", image: "/produtos/DSCF1885_Moscato.jpg" },
+      { name: "Grappa Orgânica", desc: "(275 e 500 ml)", image: "/produtos/DSCF1960_Grappas.jpg" },
+      { name: "Grappa Envelhecida", desc: "Envelhecida em barricas de Carvalho francês (500 ml)", image: "/produtos/DSCF1968_Grappas.jpg" },
+      { name: "Grappa de Funcho", desc: "Com sabor funcho (275, 500 e 750 ml)", image: "/produtos/DSCF1826_Funcho.jpg" },
     ],
   },
   {
     id: "vinhos",
     name: "Vinhos",
     description:
-      "Vinhos finos elaborados com uvas selecionadas, resultando em aromas complexos e paladares inesquecíveis.",
+      "Vinhos finos elaborados com uvas selecionadas e néctares integrais que preservam o sabor natural da fruta.",
     products: [
-      { name: "Uva Moscato", image: "/produtos/DSCF1830_Uva Moscato.jpg" },
-      { name: "Vinho de Uva", image: "/produtos/DSCF1839_Uva.jpg" },
-      { name: "Moscato", image: "/produtos/DSCF1857_Moscato_Todas.jpg" },
-      { name: "Vinho de Uva", image: "/produtos/DSCF1875_Uva_Todas.jpg" },
-      { name: "Vinho de Uva (500ml)", image: "/produtos/DSCF1880_Uva_500.jpg" },
-      { name: "Moscato", image: "/produtos/DSCF1885_Moscato.jpg" },
-      { name: "Moscato", image: "/produtos/DSCF1903_Moscato.jpg" },
-      { name: "Moscatel", image: "/produtos/DSCF1906_Moscatel.jpg" },
-      { name: "Chardonnay", image: "/produtos/DSCF1913_Chardonnay.jpg" },
-      { name: "Vinhos Brancos", image: "/produtos/DSCF1915_Vinhos Brancos.jpg" },
-      { name: "Riesling", image: "/produtos/DSCF1920_Riesling.jpg" },
-      { name: "Merlot", image: "/produtos/DSCF1922_Merlot.jpg" },
-      { name: "Vinhos Tintos", image: "/produtos/DSCF1928_Vinhos Tintos.jpg" },
-      { name: "Cabernet Sauvignon", image: "/produtos/DSCF1930_Carbernet Sauvignon.jpg" },
-      { name: "Tannat", image: "/produtos/DSCF1932_Tannat.jpg" },
-      { name: "Vinhos Tintos", image: "/produtos/DSCF1933_Vinhos Tintos.jpg" },
-      { name: "Vinhos Tintos", image: "/produtos/DSCF1935_Vinhos Tintos.jpg" },
-      { name: "Vinhos", image: "/produtos/DSCF1940_Vinhos.jpg" },
-      { name: "Vinhos", image: "/produtos/DSCF1943_Vinhos.jpg" },
+      { name: "Vinho Tinto Fino", desc: "Cabernet Sauvignon", image: "/produtos/DSCF1930_Carbernet Sauvignon.jpg" },
+      { name: "Vinho Branco Fino", desc: "Chardonnay", image: "/produtos/DSCF1913_Chardonnay.jpg" },
+      { name: "Néctar de Uva Tinto", desc: "(300 ml)", image: "/produtos/DSCF1935_Vinhos Tintos.jpg" },
+      { name: "Néctar de Uva Branca", desc: "(300 ml)", image: "/produtos/DSCF1915_Vinhos Brancos.jpg" },
     ],
   },
   {
@@ -74,23 +49,19 @@ const categories = [
     name: "Espumantes",
     description: "Borbulhas finas e refrescantes, perfeitas para celebrar os melhores momentos da vida.",
     products: [
-      { name: "Brut", image: "/produtos/DSCF1909_Brut.jpg" },
-      { name: "Espumantes", image: "/produtos/DSCF1945_Espumantes.jpg" },
-      { name: "Espumantes", image: "/produtos/DSCF1947_Espumantes.jpg" },
-      { name: "Espumantes", image: "/produtos/DSCF1949_Espumantes.jpg" },
+      { name: "Espumante Brut", desc: "Método Tradicional", image: "/produtos/DSCF1909_Brut.jpg" },
+      { name: "Espumante Moscatel", desc: "Suave e aromático", image: "/produtos/DSCF1906_Moscatel.jpg" },
+      { name: "Espumante Rosé", desc: "Fresco e frutado", image: "/produtos/DSCF1945_Espumantes.jpg" },
     ],
   },
   {
     id: "licores",
     name: "Licores",
     description:
-      "Uma doce e intensa expressão dos sabores da Serra Gaúcha, ideais para digestivos e momentos de descontração.",
+      "Uma doce e intensa expressão dos sabores da Serra Gaúcha, ideais para digestivos.",
     products: [
-      { name: "Licor de Figo", image: "/produtos/DSCF1819_Licor de Figo_Todas.jpg" },
-      { name: "Funcho", image: "/produtos/DSCF1826_Funcho.jpg" },
-      { name: "Licor de Figo", image: "/produtos/DSCF1891_Licor de Figo_Todas.jpg" },
-      { name: "Licor de Figo (500ml)", image: "/produtos/DSCF1894_Licor de Figo_500.jpg" },
-      { name: "Funcho", image: "/produtos/DSCF1899_Funcho.jpg" },
+      { name: "Licor de Figo", desc: "(275, 500 ml)", image: "/produtos/DSCF1819_Licor de Figo_Todas.jpg" },
+      { name: "Néctar de Mirtilo", desc: "(300 ml)", image: "/produtos/DSCF1955_Grappas.jpg" },
     ],
   },
 ];
@@ -134,12 +105,12 @@ function RotulosPage() {
                 </p>
               </Reveal>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10">
+              <div className="flex flex-wrap justify-center gap-8 md:gap-10">
                 {category.products.map((product, pIndex) => (
                   <Reveal
                     key={`${product.name}-${pIndex}`}
                     delay={pIndex * 50}
-                    className="group"
+                    className="group w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.666rem)] lg:w-[calc(25%-1.875rem)]"
                   >
                     <div className="relative aspect-[3/4] overflow-hidden border border-gold/20 bg-wood-dark/5 transition-colors duration-500 hover:border-gold/60">
                       <img
@@ -153,6 +124,11 @@ function RotulosPage() {
                         <h3 className="font-display text-lg tracking-wider text-cream">
                           {product.name}
                         </h3>
+                        {product.desc && (
+                          <p className="mt-2 font-serif text-sm text-cream/80">
+                            {product.desc}
+                          </p>
+                        )}
                       </div>
                     </div>
                   </Reveal>

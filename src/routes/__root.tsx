@@ -92,10 +92,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
       { property: "og:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
       { name: "twitter:description", content: "A premium institutional website for Grappa Cantelli, preserving a family tradition since 1881." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e939fb2d-121c-4399-bab4-f4a6d81825e6/id-preview-1033f293--dd675ddc-4553-4170-bcac-314b51f3eca3.lovable.app-1780260008477.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e939fb2d-121c-4399-bab4-f4a6d81825e6/id-preview-1033f293--dd675ddc-4553-4170-bcac-314b51f3eca3.lovable.app-1780260008477.png" },
+      { property: "og:image", content: "/og-image.png" },
+      { name: "twitter:image", content: "/og-image.png" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" },

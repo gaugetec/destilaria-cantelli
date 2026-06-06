@@ -9,13 +9,13 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Grappa Cantelli — Uma tradição preservada desde 1881" },
+      { title: "Grappa Cantelli — Uma tradição preservada desde 1898" },
       {
         name: "description",
         content:
           "Mais de um século de história, autenticidade e tradição. A Grappa Cantelli preserva o legado familiar trazido por Gioachino Cantelli de Breganze, Itália, para os Caminhos de Pedra, Serra Gaúcha.",
       },
-      { property: "og:title", content: "Grappa Cantelli — Uma tradição preservada desde 1881" },
+      { property: "og:title", content: "Grappa Cantelli — Uma tradição preservada desde 1898" },
       {
         property: "og:description",
         content:
@@ -49,7 +49,7 @@ function HomePage() {
 
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-cream">
           <Reveal delay={200}>
-            <div className="eyebrow !text-gold-soft">Dal 1881 · Caminhos de Pedra</div>
+            <div className="eyebrow !text-gold-soft">Dal 1898 · Caminhos de Pedra</div>
           </Reveal>
           <Reveal delay={400}>
             <h1 className="mt-6 font-display text-5xl sm:text-7xl md:text-8xl tracking-[0.15em] font-medium">
@@ -61,7 +61,7 @@ function HomePage() {
             <div className="mt-8 flex items-center gap-4">
               <span className="h-px w-12 bg-gold" />
               <span className="font-serif italic text-xl md:text-2xl text-cream/90">
-                Uma tradição preservada desde 1881
+                Uma tradição preservada desde 1898
               </span>
               <span className="h-px w-12 bg-gold" />
             </div>
@@ -113,7 +113,7 @@ function HomePage() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 hidden md:block font-display text-[7rem] leading-none text-gold/15 select-none">
-              1881
+              1898
             </div>
           </Reveal>
 
@@ -200,10 +200,10 @@ function HomePage() {
         <div className="relative z-10 px-6 max-w-4xl">
           <Reveal>
             <span className="font-display text-gold text-xs tracking-[0.5em] uppercase">
-              MDCCCLXXXI
+              MDCCCXCVIII
             </span>
             <blockquote className="mt-8 font-serif italic text-3xl md:text-5xl lg:text-6xl text-cream leading-[1.3]">
-              "Desde 1881 preservando uma
+              "Desde 1898 preservando uma
               <br />
               herança familiar única."
             </blockquote>

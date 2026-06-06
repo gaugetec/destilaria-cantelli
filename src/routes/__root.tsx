@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Destilaria Cantelli — Tradição preservada desde 1881" },
+      { title: "Destilaria Cantelli — Tradição preservada desde 1898" },
       {
         name: "description",
         content:
@@ -87,8 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Grappa Cantelli" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Destilaria Cantelli — Tradição preservada desde 1881" },
-      { name: "twitter:title", content: "Destilaria Cantelli — Tradição preservada desde 1881" },
+      { property: "og:title", content: "Destilaria Cantelli — Tradição preservada desde 1898" },
+      { name: "twitter:title", content: "Destilaria Cantelli — Tradição preservada desde 1898" },
       { property: "og:description", content: "Grappa Cantelli: mais de um século de tradição familiar italiana preservada nos Caminhos de Pedra, Serra Gaúcha." },
       { name: "twitter:description", content: "Grappa Cantelli: mais de um século de tradição familiar italiana preservada nos Caminhos de Pedra, Serra Gaúcha." },
       { property: "og:image", content: "/og-image.png" },

@@ -14,12 +14,12 @@ export const Route = createFileRoute("/historia")({
       {
         name: "description",
         content:
-          "Uma jornada iniciada em 1881 por Gioachino Cantelli, imigrante italiano que trouxe de Breganze a arte de produzir grappa preservada por gerações.",
+          "Uma jornada iniciada em 1898 por Gioachino Cantelli, imigrante italiano que trouxe de Breganze a arte de produzir grappa preservada por gerações.",
       },
       { property: "og:title", content: "Nossa História — Grappa Cantelli" },
       {
         property: "og:description",
-        content: "Uma jornada iniciada em 1881 nos Caminhos de Pedra, Serra Gaúcha.",
+        content: "Uma jornada iniciada em 1898 nos Caminhos de Pedra, Serra Gaúcha.",
       },
       { property: "og:type", content: "article" },
       { property: "og:url", content: "/historia" },
@@ -81,7 +81,7 @@ function HistoriaPage() {
             <div className="mt-8 flex items-center gap-4">
               <span className="h-px w-12 bg-gold" />
               <span className="font-serif italic text-xl md:text-2xl text-cream/90">
-                Uma jornada iniciada em 1881
+                Uma jornada iniciada em 1898
               </span>
               <span className="h-px w-12 bg-gold" />
             </div>

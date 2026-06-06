@@ -13,7 +13,7 @@ export function SiteFooter() {
             </div>
             <div className="mt-6 inline-block h-px w-16 bg-gold" />
             <p className="mt-6 font-serif text-lg italic text-cream/80 leading-relaxed max-w-xs">
-              Tradição, história e autenticidade desde 1881.
+              Tradição, história e autenticidade desde 1898.
             </p>
           </div>
 
